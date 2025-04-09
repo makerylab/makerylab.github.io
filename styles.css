@@ -223,13 +223,18 @@ footer {
     }
 
     .nav-labels {
-        gap: 1rem;
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: center; /* Centra los enlaces horizontalmente */
+        gap: 0.5rem; /* Reduce el espacio entre los enlaces apilados */
         margin: 1.5rem 0;
+        width: 100%; /* Ocupa todo el ancho disponible */
     }
     
     .nav-label {
         font-size: 1rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.8rem 1rem; /* Aumenta el padding vertical para mejor toque */
+        width: 100%; /* Cada enlace ocupa todo el ancho */
+        text-align: center; /* Centra el texto de cada enlace */
     }
 
     main {
@@ -238,6 +243,7 @@ footer {
 
     section {
         padding: 1.5rem;
+        scroll-margin-top: calc(var(--header-height) + 30px); /* Ajusta el scroll margin */
     }
 }
 

@@ -1,0 +1,226 @@
+/* Variables globales */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f5f6fa;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --header-height: 150px; /* Volvemos a 150px */
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Scroll suave */
+}
+
+html {
+    scroll-padding-top: calc(var(--header-height) - 50px); /* Volvemos al valor anterior */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* Header y navegación */
+header {
+    background-color: var(--white);
+    padding: 2rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+header p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-top: -0.5rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Contenedor principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Secciones */
+section {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    scroll-margin-top: calc(var(--header-height) - 30px); /* Volvemos al valor anterior */
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Proyectos */
+.proyecto {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 6px;
+    background-color: var(--light-bg);
+    transition: var(--transition);
+}
+
+.proyecto:hover {
+    transform: translateX(10px);
+}
+
+.proyecto h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.proyecto p {
+    margin-bottom: 1rem;
+}
+
+.proyecto strong {
+    color: var(--primary-color);
+}
+
+/* Habilidades */
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.habilidad-grupo {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.habilidad-grupo h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.habilidad-grupo ul {
+    list-style-position: inside;
+}
+
+/* Contacto */
+#contacto ul {
+    list-style: none;
+}
+
+#contacto li {
+    margin-bottom: 1rem;
+}
+
+#contacto a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+#contacto a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .habilidades-container {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.5s ease-out;
+} 

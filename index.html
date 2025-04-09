@@ -3,20 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio de Mayker Montoya</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¡Hola! Soy [Mayker]</h1>
-    <p>Ingeniero Electrónico especializado en sistemas embebidos con 3 años de experiencia.</p>
-    <p>Bienvenido a mi portafolio donde podrás ver algunos de mis proyectos.</p>
+    <header>
+        <h1>Mayker Duilio Montoya García</h1>
+        <p>Ingeniero Electrónico | Especializado en Sistemas Embebidos</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Proyectos</h2>
-    <ul>
-        <li>[Enlace a un proyecto futuro] - Descripción breve del proyecto</li>
-        <li>[Otro enlace a un proyecto futuro] - Otra descripción breve</li>
-    </ul>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Ingeniero Electrónico con 3 años de experiencia en programación de firmware, diseño de hardware y desarrollo de sistemas embebidos. Experiencia en el ciclo de vida completo de productos electrónicos, desde la concepción hasta la prueba y puesta en marcha de PCBs. Con una sólida base en lenguajes como C/C++ y Python, manejo de microcontroladores ESP32, PIC y Arduino, y experiencia en protocolos de comunicación. Busco oportunidades desafiantes donde pueda aplicar mis habilidades técnicas y mi pasión por la innovación en el desarrollo de soluciones embebidas.</p>
+        </section>
 
-    <h3>Contacto</h3>
-    <p>Puedes contactarme a través de [mayker.montoya01@gmail.com] o en mi perfil de <a href="[https://www.linkedin.com/in/maykermontoya/]">LinkedIn</a>.</p>
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="proyecto">
+                <h3>Sistema de Control para Autoclave</h3>
+                <p>Diseño, fabricación, programación e instalación de un sistema de control para un equipo de esterilización (autoclave a vapor autogenerado) de instrumental médico quirúrgico. Proyecto realizado para el Hospital Privado Dr. Plata.</p>
+                <p><strong>Tecnologías:</strong> Microcontroladores, Programación en C, Diseño de PCBs, Protocolos de Comunicación</p>
+            </div>
+
+            <div class="proyecto">
+                <h3>Sistemas de Control para Camas Quirúrgicas</h3>
+                <p>Diseño e implementación de sistemas de control para camas quirúrgicas, tanto con motores eléctricos como hidráulicos. Proyectos realizados para el Hospital Privado Dr. Plata y el Hospital del Seguro Social IVSS de San Cristóbal, Venezuela.</p>
+                <p><strong>Tecnologías:</strong> Control de Motores, Sistemas Embebidos, Diseño Electrónico</p>
+            </div>
+
+            <div class="proyecto">
+                <h3>Supervisión de Sistema de Seguridad Electrónica</h3>
+                <p>Supervisión de operaciones y mantenimiento de sistemas de seguridad en Centro Comercial SAMBIL. Implementación de nuevos protocolos de diagnóstico y resolución de fallos en sistemas electrónicos. Supervisión de mantenimientos preventivos y correctivos de dispositivos de seguridad y vigilancia.</p>
+                <p><strong>Tecnologías:</strong> Sistemas de Seguridad, Diagnóstico Electrónico, Mantenimiento Preventivo y Correctivo</p>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades-container">
+                <div class="habilidad-grupo">
+                    <h3>Programación y Desarrollo</h3>
+                    <ul>
+                        <li>Lenguajes: C, C++, Python, Arduino, ASSEMBLER</li>
+                        <li>IDEs: MPLAB-X, Espressif, ATMEL Studio, Arduino</li>
+                        <li>Web: PHP, SQL, JavaScript, HTML5, CSS3</li>
+                    </ul>
+                </div>
+                <div class="habilidad-grupo">
+                    <h3>Hardware y Sistemas Embebidos</h3>
+                    <ul>
+                        <li>Microcontroladores: ESP32, PIC, STM32</li>
+                        <li>Protocolos: SPI, I2C, UART, TCP/IP</li>
+                        <li>Diseño de PCBs y circuitos electrónicos</li>
+                    </ul>
+                </div>
+                <div class="habilidad-grupo">
+                    <h3>Herramientas y Tecnologías</h3>
+                    <ul>
+                        <li>GIT, Docker, Mosquitto Broker, InfluxDB, NodeRed</li>
+                        <li>Equipos de laboratorio: Osciloscopio, Multímetro, etc.</li>
+                        <li>Linux y Windows (Terminal)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¡No dudes en contactarme!</p>
+            <ul>
+                <li><strong>Email:</strong> mayker.montoya01@gmail.com</li>
+                <li><strong>Teléfono:</strong> (+34) 663 539 732</li>
+                <li><strong>Ubicación:</strong> Les Corts, Barcelona, España</li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/maykermontoya">@maykermontoya</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/makerylab">@makerylab</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mayker Duilio Montoya García</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

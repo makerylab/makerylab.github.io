@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mayker Montoya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .header p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill-category {
+            flex: 1 1 300px;
+            margin-right: 20px;
+        }
+        .skill-category h3 {
+            color: #3498db;
+        }
+        .projects {
+            margin-bottom: 20px;
+        }
+        .project {
+            margin-bottom: 15px;
+        }
+        .project h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .project p {
+            margin: 5px 0;
+        }
+        @media print {
+            body {
+                padding: 0;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mayker Duilio Montoya García</h1>
+        <p>Ingeniero Electrónico | Especializado en Sistemas Embebidos</p>
+    </div>
+
+    <div class="section">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> mayker.montoya01@gmail.com</p>
+            <p><strong>Teléfono:</strong> (+34) 663 539 732</p>
+            <p><strong>Ubicación:</strong> Les Corts, Barcelona, España</p>
+            <p><strong>LinkedIn:</strong> @maykermontoya</p>
+            <p><strong>GitHub:</strong> @makerylab</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Resumen Profesional</h2>
+        <p>Ingeniero Electrónico con 3 años de experiencia en programación de firmware, diseño de hardware y desarrollo de sistemas embebidos. Experiencia en el ciclo de vida completo de productos electrónicos, desde la concepción hasta la prueba y puesta en marcha de PCBs. Con una sólida base en lenguajes como C/C++ y Python, manejo de microcontroladores ESP32, PIC y Arduino, y experiencia en protocolos de comunicación.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experiencia Profesional</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Supervisor de Operaciones de Sistema de Seguridad Electrónica</h3>
+                <p><strong>Empresa:</strong> J.C. PROYECTOS</p>
+                <p><strong>Ubicación:</strong> Centro Comercial SAMBIL S.C.</p>
+                <p><strong>Período:</strong> marzo 2023 – marzo 2024</p>
+                <p><strong>Actividades:</strong></p>
+                <ul>
+                    <li>Supervisión de actividades de mantenimientos preventivos y correctivos de dispositivos de seguridad y vigilancia.</li>
+                    <li>Planificación y seguimiento de actividades.</li>
+                </ul>
+                <p><strong>Logros:</strong></p>
+                <ul>
+                    <li>Resolví fallos en tarjetas electrónicas de gestión de los datos de vigilancia con poca documentación actualizada.</li>
+                    <li>Implementé un nuevo protocolo de diagnóstico de estado de sensores, reduciendo el tiempo de detección de fallos.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Práctica Profesional - Dpto. de Ingeniería Biomédica</h3>
+                <p><strong>Empresa:</strong> Hospital del Seguro Social IVSS - San Cristóbal</p>
+                <p><strong>Período:</strong> febrero 2022 – febrero 2023</p>
+                <p><strong>Actividades:</strong></p>
+                <ul>
+                    <li>Desarrollo de sistema de control para autoclave a vapor.</li>
+                    <li>Diseño de sistema de control de potencia para cama quirúrgica.</li>
+                    <li>Diseño e instalación de tarjetas de control para camas quirúrgicas.</li>
+                    <li>Reparación de fallas en tarjetas electrónicas de equipos médicos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Proyectos Destacados</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Sistema de Control para Autoclave</h3>
+                <p><strong>Cliente:</strong> Hospital Privado Dr. Plata - San Cristóbal - Venezuela</p>
+                <p><strong>Período:</strong> noviembre 2023 – diciembre 2023</p>
+                <p>Diseño, fabricación, programación e instalación de un sistema de control para un equipo de esterilización.</p>
+            </div>
+
+            <div class="project">
+                <h3>Sistemas de Control para Camas Quirúrgicas</h3>
+                <p><strong>Clientes:</strong> Hospital Privado Dr. Plata y Hospital del Seguro Social IVSS de San Cristóbal, Venezuela</p>
+                <p><strong>Período:</strong> enero 2023 – marzo 2023</p>
+                <p>Diseño e implementación de sistemas de control para camas quirúrgicas, tanto con motores eléctricos como hidráulicos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <h3>Programación y Desarrollo</h3>
+                <ul>
+                    <li>Lenguajes: C, C++, Python, Arduino, ASSEMBLER</li>
+                    <li>IDEs: MPLAB-X, Espressif, ATMEL Studio, Arduino</li>
+                    <li>Web: PHP, SQL, JavaScript, HTML5, CSS3</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Hardware y Sistemas Embebidos</h3>
+                <ul>
+                    <li>Microcontroladores: ESP32, PIC, STM32</li>
+                    <li>Protocolos: SPI, I2C, UART, TCP/IP</li>
+                    <li>Diseño de PCBs y circuitos electrónicos</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Herramientas y Tecnologías</h3>
+                <ul>
+                    <li>GIT, Docker, Mosquitto Broker, InfluxDB, NodeRed</li>
+                    <li>Equipos de laboratorio: Osciloscopio, Multímetro, etc.</li>
+                    <li>Linux y Windows (Terminal)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Educación</h2>
+        <div class="project">
+            <h3>Ingeniería Electrónica</h3>
+            <p><strong>Institución:</strong> Universidad Nacional Experimental del Táchira (UNET)</p>
+            <p><strong>Año:</strong> 2023</p>
+        </div>
+    </div>
+</body>
+</html> 

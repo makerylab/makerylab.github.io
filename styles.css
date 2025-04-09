@@ -209,7 +209,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     header {
-        height: auto;
+        height: auto; /* Ajusta la altura automáticamente */
         padding: 1.5rem 0;
     }
 
@@ -223,18 +223,20 @@ footer {
     }
 
     .nav-labels {
+        display: flex; /* Mantenemos flex para centrar */
         flex-direction: column; /* Apila los enlaces verticalmente */
-        align-items: center; /* Centra los enlaces horizontalmente */
-        gap: 0.5rem; /* Reduce el espacio entre los enlaces apilados */
-        margin: 1.5rem 0;
-        width: 100%; /* Ocupa todo el ancho disponible */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 0.5rem; /* Espacio entre los enlaces */
+        margin: 1.5rem auto; /* Centra el contenedor de navegación */
+        width: fit-content; /* El contenedor se ajusta al ancho de su contenido */
     }
-    
+
     .nav-label {
         font-size: 1rem;
-        padding: 0.8rem 1rem; /* Aumenta el padding vertical para mejor toque */
-        width: 100%; /* Cada enlace ocupa todo el ancho */
-        text-align: center; /* Centra el texto de cada enlace */
+        padding: 0.8rem 1rem;
+        width: auto; /* El ancho del enlace se ajusta al contenido */
+        display: block; /* Mantenemos block para que ocupe una línea */
+        text-align: center; /* Centra el texto dentro del enlace */
     }
 
     main {
@@ -261,4 +263,4 @@ footer {
 
 section {
     animation: fadeIn 0.5s ease-out;
-} 
+}

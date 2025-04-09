@@ -7,7 +7,7 @@
     --light-bg: #f5f6fa;
     --white: #ffffff;
     --transition: all 0.3s ease;
-    --header-height: 150px; /* Volvemos a 150px */
+    --header-height: 150px;
 }
 
 /* Reset y estilos base */
@@ -15,11 +15,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; /* Scroll suave */
+    scroll-behavior: smooth;
 }
 
 html {
-    scroll-padding-top: calc(var(--header-height) - 50px); /* Volvemos al valor anterior */
+    scroll-padding-top: calc(var(--header-height) - 50px);
 }
 
 body {
@@ -57,26 +57,44 @@ header p {
     margin-bottom: 1rem;
 }
 
-nav ul {
+/* Navegación con labels */
+.nav-labels {
     display: flex;
     justify-content: center;
-    list-style: none;
     gap: 2rem;
-    margin-top: -0.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
 }
 
-nav a {
+.nav-label {
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
+    font-size: 1.1rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: var(--transition);
+    position: relative;
+    background: transparent;
 }
 
-nav a:hover {
+.nav-label::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
     background-color: var(--secondary-color);
-    color: var(--white);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.nav-label:hover {
+    color: var(--secondary-color);
+}
+
+.nav-label:hover::after {
+    width: 100%;
 }
 
 /* Contenedor principal */
@@ -200,30 +218,14 @@ footer {
         margin-bottom: 1.2rem;
     }
 
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.8rem;
-        margin-top: 0;
+    .nav-labels {
+        gap: 1rem;
+        margin: 1.5rem 0;
     }
-
-    nav a {
-        display: block;
-        padding: 0.5rem 0.8rem;
-        background-color: var(--light-bg);
-        border: 1px solid var(--secondary-color);
-        text-align: center;
-        min-width: 80px;
-    }
-
-    nav a:hover {
-        background-color: var(--secondary-color);
-        color: var(--white);
-    }
-
-    .habilidades-container {
-        grid-template-columns: 1fr;
+    
+    .nav-label {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
     }
 
     main {

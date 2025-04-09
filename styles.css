@@ -61,9 +61,12 @@ header p {
 .nav-labels {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
     flex-wrap: wrap;
+    max-width: 800px;
+    padding: 0 1rem;
 }
 
 .nav-label {
@@ -75,6 +78,7 @@ header p {
     transition: var(--transition);
     position: relative;
     background: transparent;
+    white-space: nowrap;
 }
 
 .nav-label::after {
